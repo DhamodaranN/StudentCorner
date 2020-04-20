@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Step_one"
+    >
+
+
+    <LinearLayout
+        android:background="#fff"
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/smce"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            />
+
+        <EditText
+            android:drawableLeft="@drawable/ic_assignment_ind_black_24dp"
+            android:background="@drawable/background"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHint="#277C2A"
+            android:id="@+id/regno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="10dp"
+            android:hint="Register Number"
+            android:inputType="number"
+            android:paddingLeft="25dp"
+            android:textSize="20dp" />
+
+
+        <Button
+
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/background"
+            android:layout_height="wrap_content"
+            android:text="check"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#277C2A"
+            android:id="@+id/check"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:drawableLeft="@drawable/ic_message_black_24dp"
+            android:background="@drawable/background"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="#277C2A"
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Enter the OTP"
+            android:inputType="text"
+            android:paddingLeft="25dp"
+            android:drawablePadding="10dp"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/verify"
+            android:textColor="#000"
+            android:background="@drawable/background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="verify"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:text="Already have an Account ? Login"
+            android:layout_marginBottom="20dp"
+            android:onClick="already"/>
+    </LinearLayout>
+
+</ScrollView>
