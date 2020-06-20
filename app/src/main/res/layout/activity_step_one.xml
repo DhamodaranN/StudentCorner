@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Step_one"
-    >
+    tools:context=".Step_one">
 
 
     <LinearLayout
@@ -24,7 +21,7 @@
             android:src="@drawable/smce"
             android:layout_gravity="center"
             android:layout_marginBottom="40dp"
-            />
+            android:contentDescription="@string/smce" />
 
         <EditText
             android:drawableLeft="@drawable/ic_assignment_ind_black_24dp"
@@ -38,10 +35,14 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:drawablePadding="10dp"
-            android:hint="Register Number"
+            android:hint="@string/register_number"
             android:inputType="number"
             android:paddingLeft="25dp"
-            android:textSize="20dp" />
+            android:textSize="20sp"
+            android:drawableStart="@drawable/ic_assignment_ind_black_24dp"
+            android:paddingStart="25dp"
+            android:autofillHints=""
+            tools:ignore="RtlSymmetry" />
 
 
         <Button
@@ -50,13 +51,13 @@
             android:layout_width="wrap_content"
             android:background="@drawable/background"
             android:layout_height="wrap_content"
-            android:text="check"
+            android:text="@string/check"
             android:layout_gravity="center"
             android:textStyle="bold"
             android:gravity="center"
             android:textColor="#277C2A"
             android:id="@+id/check"
-            android:textSize="20dp"/>
+            android:textSize="20sp"/>
 
         <EditText
             android:drawableLeft="@drawable/ic_message_black_24dp"
@@ -70,11 +71,15 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:hint="Enter the OTP"
+            android:hint="@string/enter_the_otp"
             android:inputType="text"
             android:paddingLeft="25dp"
             android:drawablePadding="10dp"
-            android:textSize="20dp" />
+            android:textSize="20sp"
+            android:autofillHints="otp"
+            android:drawableStart="@drawable/ic_message_black_24dp"
+            android:paddingStart="25dp"
+            tools:ignore="RtlSymmetry" />
 
         <Button
             android:id="@+id/verify"
@@ -84,7 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:text="verify"
+            android:text="@string/verify"
             android:layout_marginBottom="20dp"
             />
 
@@ -92,9 +97,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:gravity="center"
-            android:text="Already have an Account ? Login"
+            android:text="@string/already_have_an_account_login"
             android:layout_marginBottom="20dp"
             android:onClick="already"/>
     </LinearLayout>
